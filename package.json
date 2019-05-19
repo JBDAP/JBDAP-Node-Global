@@ -1,6 +1,6 @@
 {
   "name": "jbdap-global",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Prepare a better global environment for nodejs.",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "jbdap-nice-error": "^0.1.3",
+    "knex": "^0.17.0-next3",
     "lodash": "^4.17.11"
   },
   "devDependencies": {

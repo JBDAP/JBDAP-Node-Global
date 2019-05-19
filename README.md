@@ -25,7 +25,8 @@ yarn add jbdap-global
     - newErrorI18N - Function - making a new NiceError works with i18n dict
     - throwErrorI18N - Function - throw a NiceError
     - exec - Function - executing a promise, returns an object contains error/data
-    - _ - lodash shortcut
+    - _ - shortcut for lodash library
+    - knex - shortcut for knexjs library
     - cryptor - some common encryptors
         - getHash(cypher,content)
         - md5(content)

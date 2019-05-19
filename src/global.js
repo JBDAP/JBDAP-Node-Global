@@ -60,13 +60,17 @@ JS.exec = (promise) => {
         })
 }
 
-// 全局挂载 lodash
+// 挂载 lodash
 import _ from 'lodash'
 JS._ = _
 
-// 全局挂载 crypto
+// 挂载 crypto
 import cryptor from './cryptor'
 JS.cryptor = cryptor
+
+// 挂载 knex
+import knex from 'knex'
+JS.knex = knex
 
 // 标记已经挂载成功
 global.JBDAP_GLOBAL_OK = true
