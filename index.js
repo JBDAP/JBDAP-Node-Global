@@ -1,1 +1,1 @@
-module.exports = require('./lib/global')
+require('./lib/global')
