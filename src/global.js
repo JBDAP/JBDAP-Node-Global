@@ -2,6 +2,9 @@
  * 对 global 进行丰富
  */
 
+// 引入 JS 增强
+require('jbdap-makeup')
+
 // 防止变量污染，创建独立的命名空间
 if (global.$JBDAP_SYS === undefined) global.$JBDAP_SYS = {}
 // JS 是 JBDAP_SYS 的缩写
@@ -78,18 +81,6 @@ JS.exec = (promise) => {
 JS.sleep = (timeoutMS) => new Promise((resolve) => {
     setTimeout(resolve, timeoutMS)
 })
-
-// 挂载 lodash
-import _ from 'lodash'
-JS._ = _
-
-// 挂载 crypto
-import cryptor from './cryptor'
-JS.cryptor = cryptor
-
-// 挂载 knex
-import knex from 'knex'
-JS.knex = knex
 
 // 标记已经挂载成功
 global.JBDAP_GLOBAL_OK = true

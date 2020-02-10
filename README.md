@@ -2,6 +2,12 @@
 
 ### A better nodejs global environment based on jbdap-nice-error and jbdap-makeup.
 
+## ChangeLogs:
+
+- remove lodash module - need it or not should be the jbdap dialect developer's decision to make
+- remove knex - the same as above
+- remove cryptor - jbdap-makeup has contained the same api by extending the vanila JS String Object
+
 ## **Install**
 
 ~~~
@@ -27,12 +33,5 @@ yarn add jbdap-global
     - throwErrorI18N(name,cause,info,dict,lang) - Function - throw a NiceError
     - exec - Function - executing a promise, returns an object contains error/data
     - sleep(ms) - Function - pause for a while
-    - _ - shortcut for lodash library
-    - knex - shortcut for knexjs library
-    - cryptor - some common encryptors
-        - getHash(cypher,content)
-        - md5(content)
-        - sha256(content)
-        - sha512(content)
 
 ## Enjoy it :-)
