@@ -8,12 +8,16 @@
     "pretest": "yarn run build",
     "build": "babel src -d lib",
     "prepare": "yarn run build",
-    "updependencies": "yarn upgrade jbdap-nice-error@latest lodash@latest",
+    "updependencies": "yarn upgrade jbdap-nice-error@latest jbdap-makeup@latest",
     "preupdependencies": "yarn upgrade @babel/cli@latest @babel/core@latest @babel/preset-env@latest jest@latest"
   },
   "author": "JBDAP TEAM <jbdapteam@outlook.com>",
   "license": "GPL-3.0",
-  "dependencies": {
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JBDAP/JBDAP-Node-Global"
+  },
+"dependencies": {
     "jbdap-makeup": "^0.1.3",
     "jbdap-nice-error": "^0.1.3"
   },
